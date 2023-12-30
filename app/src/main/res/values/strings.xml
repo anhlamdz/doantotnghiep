@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">doantotnghiep</string>
+    <!-- Language -->
+    <string name="choice_lang_vn">Vui lòng chọn ngôn ngữ</string>
+    <string name="lang_vn">Tiếng Việt</string>
+    <string name="choice_lang_eng">Please select your language</string>
+    <string name="lang_eng">English</string>
+    <string name="btn_save">Lưu</string>
+    <string name="account_title">Ba mẹ đã có tài khoản chưa?</string>
+    <string name="already_account">Tôi đã có tài khoản</string>
+    <string name="no_account">Tôi chưa có tài khoản</string>
+    <string name="login">Đăng nhập</string>
+    <string name="signup">Đăng ký</string>
+    <string name="title_login">Đăng nhập tài khoản</string>
+    <string name="login_username">Điền Username/SĐT</string>
+    <string name="login_pass">Điền mật khẩu</string>
+    <string name="forget_pass">Quên mật khẩu?</string>
+    <string name="descriptoion_signup">Ba mẹ chưa có tài khoản?Đăng ký ngay!</string>
+    <string name="title_signup">Đăng ký tài khoản</string>
+    <string name="description_save_1">Lưu lại quá trình học tập</string>
+    <string name="description_save_2">Sử dụng trên nhiều thiết bị</string>
+    <string name="or">Hoặc</string>
+    <string name="number_phone">Nhập số điện thoại của bạn...</string>
+    <string name="or_continue">Hoặc tiếp tục với</string>
+    <string name="description_login">Ba mẹ đã có tài khoản?Đăng nhập ngay!</string>
+    <string name="title_pass">Thiết lập mật khẩu</string>
+    <string name="description_pass">Tài khoản của bạn có thể được dùng để đăng nhập trên tất cả các thiết bị</string>
+    <string name="fill_pass">Điền mật khẩu</string>
+    <string name="return_pass">Xác nhận mật khẩu</string>
+    <!-- Guide -->
+    <string name="guide_study">Tạo hồ sơ học tập</string>
+    <string name="name_kids">Tên của bé là gì?</string>
+    <string name="fill_name">Điền tên của bé</string>
+    <string name="btn_continue">Tiếp tục</string>
+    <string name="age_kids">Bé bao nhiêu tuổi ?</string>
+    <string name="birthday_kids">Bé sinh vào năm nào?</string>
+</resources>
