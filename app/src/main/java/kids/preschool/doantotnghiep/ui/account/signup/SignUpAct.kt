@@ -1,6 +1,8 @@
 package kids.preschool.doantotnghiep.ui.account.signup
 
 import android.content.Intent
+import android.util.Patterns
+import android.widget.Toast
 import io.strongapp.gymworkout.base.BaseActivity
 import kids.preschool.doantotnghiep.R
 import kids.preschool.doantotnghiep.databinding.ActivitySignupBinding
@@ -20,9 +22,18 @@ class SignUpAct : BaseActivity<ActivitySignupBinding>() {
 			val intent = Intent(this, LoginAct::class.java)
 			startActivity(intent)
 		}
-		binding.btnSignup.setOnClickListener {
-			val intent = Intent(this,PassAct::class.java)
-			startActivity(intent)
+		binding.btnContinue.setOnClickListener {
+			when(isValidPhoneNumber(binding.numberPhone.text.toString())){
+				true -> {
+					val intent = Intent(this,PassAct::class.java)
+					intent.putExtra("username",binding.numberPhone.text.toString())
+					startActivity(intent)
+				}
+				false -> {
+					Toast.makeText(this,resources.getText(R.string.warning_number_phone),Toast.LENGTH_SHORT).show()
+				}
+			}
+
 		}
 	}
 
@@ -33,4 +44,11 @@ class SignUpAct : BaseActivity<ActivitySignupBinding>() {
 	override fun bindViewModel() {
 
 	}
+	fun isValidPhoneNumber(phoneNumber: String): Boolean {
+		val pattern = Patterns.PHONE
+		return pattern.matcher(phoneNumber).matches()
+	}
+
+
+
 }

@@ -3,18 +3,46 @@ package kids.preschool.doantotnghiep.ui.multiLang
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
+import android.util.Log
 import android.view.View
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import io.strongapp.gymworkout.base.BaseActivity
 import kids.preschool.doantotnghiep.R
 import kids.preschool.doantotnghiep.databinding.ActivityMultiLangBinding
 import kids.preschool.doantotnghiep.ui.account.AccountAct
+import kids.preschool.doantotnghiep.ui.guidekids.CharaterAct
+import kids.preschool.doantotnghiep.ui.guidekids.GuideNameAct
+import kids.preschool.doantotnghiep.ui.guidekids.viewmodel.GuideCharacterViewModel
+import kotlinx.coroutines.launch
 import java.util.Locale
 
 class MultiLangAct : BaseActivity<ActivityMultiLangBinding>() {
 	private var selectedLang: String? = null
 	private var myLocale: Locale? = null
+	private lateinit var guideCharacterViewModel: GuideCharacterViewModel
 	override fun initView() {
-		setLocale(this)
+		guideCharacterViewModel = ViewModelProvider(this)[GuideCharacterViewModel::class.java]
+		if (getLang() != null ){
+			setLocale(this@MultiLangAct)
+			lifecycleScope.launch {
+				val user = guideCharacterViewModel.getInfo()
+				if (user != null ){
+					guideCharacterViewModel.userAndCharacter(user.id).observe(this@MultiLangAct,{
+						it.let {
+							if (it.character.size > 0){
+								val intent = Intent(this@MultiLangAct, CharaterAct::class.java)
+								startActivity(intent)
+							}else{
+								val intent = Intent(this@MultiLangAct, GuideNameAct::class.java)
+								startActivity(intent)
+								finish()
+							}
+						}
+					})
+				}
+			}
+		}
 	}
 
 	override fun initAction() {
@@ -69,6 +97,7 @@ class MultiLangAct : BaseActivity<ActivityMultiLangBinding>() {
 		} else {
 			changeLang(language, context)
 		}
+		Log.i("hahahaha", language)
 	}
 
 	fun changeLang(lang: String?, context: Context) {

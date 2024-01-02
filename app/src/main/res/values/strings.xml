@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">doantotnghiep</string>
     <!-- Language -->
     <string name="choice_lang_vn">Vui lòng chọn ngôn ngữ</string>
@@ -7,7 +7,7 @@
     <string name="lang_eng">English</string>
     <string name="btn_save">Lưu</string>
     <string name="account_title">Ba mẹ đã có tài khoản chưa?</string>
-    <string name="already_account">Tôi đã có tài khoản</string>
+    <string name="already_account" >Tôi đã có tài khoản</string>
     <string name="no_account">Tôi chưa có tài khoản</string>
     <string name="login">Đăng nhập</string>
     <string name="signup">Đăng ký</string>
@@ -34,4 +34,20 @@
     <string name="btn_continue">Tiếp tục</string>
     <string name="age_kids">Bé bao nhiêu tuổi ?</string>
     <string name="birthday_kids">Bé sinh vào năm nào?</string>
+    <string name="image_avatar">Chọn ảnh đại diện</string>
+    <string name="take_a_shot">Chụp hình</string>
+    <string name="load_image">Chọn hình</string>
+    <string name="choice_charater">Chọn người học</string>
+    <string name="warning_number_phone" >Kiểm tra lại số điện thoại của bạn</string>
+    <string name="warning_pass">Kiểm tra số mật khẩu của bạn</string>
+    <string name="warning_age">Bạn phải lựa chọn số tuổi của bé</string>
+    <string name="warning_name">Tên của bé k được để trống</string>
+    <string name="age">Tuổi</string>
+    <!-- Home -->
+    <string name="lesson">Bài học</string>
+    <string name="test">Kiểm tra</string>
+    <string name="audio">Audio</string>
+    <string name="sound">Nhạc</string>
+
+
 </resources>

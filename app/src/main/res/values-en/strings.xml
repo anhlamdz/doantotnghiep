@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">doantotnghiep</string>
-    <!-- Language -->
-    <string name="choice_lang_vn">Vui lòng chọn ngôn ngữ</string>
-    <string name="lang_vn">Tiếng Việt</string>
-    <string name="choice_lang_eng">Please select your language</string>
-    <string name="lang_eng">English</string>
-    <string name="btn_save">Lưu</string>
+    <string name="account_title">Do parents already have an account?</string>
+    <string name="already_account">I already have an account</string>
+    <string name="no_account">I don\'t have an account</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+    <string name="title_login">Log in to your account</string>
+    <string name="login_username">Enter Username/Phone number</string>
+    <string name="login_pass">Enter password</string>
+    <string name="forget_pass">Forgot password?</string>
+    <string name="descriptoion_signup">Don\'t have an account? Sign up now!</string>
+    <string name="title_signup">Sign up for an account</string>
+    <string name="description_save_1">Save your study progress</string>
+    <string name="description_save_2">Use on multiple devices</string>
+    <string name="or">Or</string>
+    <string name="number_phone">Enter your phone number...</string>
+    <string name="or_continue">Or continue with</string>
+    <string name="description_login">Already have an account? Log in now!</string>
+    <string name="title_pass">Set up a password</string>
+    <string name="description_pass">Your account can be used to log in on all devices</string>
+    <string name="fill_pass">Enter password</string>
+    <string name="return_pass">Confirm password</string>
+    <!-- Guide -->
+    <string name="guide_study">Create a study profile</string>
+    <string name="name_kids">What is the \'s name?</string>
+    <string name="fill_name">Enter the child\'s name</string>
+    <string name="btn_continue">Continue</string>
+    <string name="age_kids">How old is the child?</string>
+    <string name="birthday_kids">When was the child born?</string>
+    <string name="image_avatar">Choose an avatar</string>
+    <string name="take_a_shot">Take a shot</string>
+    <string name="load_image">Choose an image</string>
+    <string name="choice_charater">Choose a character</string>
+    <string name="warning_number_phone">Please check your phone number</string>
+    <!-- Home -->
+    <string name="lesson">Lesson</string>
+    <string name="test">Test</string>
+    <string name="audio">Audio</string>
+    <string name="sound">Sound</string>
 </resources>

@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
@@ -34,31 +39,43 @@
         </activity>
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.account.AccountAct"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.account.login.LoginAct"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.account.signup.SignUpAct"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.account.pass.PassAct"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.guidekids.GuideNameAct"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.guidekids.GuideAgeAct"
-            android:exported="true"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.guidekids.GuideImageAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.guidekids.CharaterAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.HomeAct"
+            android:exported="false"
             android:screenOrientation="landscape"/>
     </application>
 
