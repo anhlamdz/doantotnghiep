@@ -10,4 +10,7 @@ class UserRepository(private val userDao: UserDao) {
 	fun getInfo(): UserEntity {
 		return userDao.getUser()
 	}
+	suspend fun update(userEntity: UserEntity) {
+		userDao.update(userEntity)
+	}
 }

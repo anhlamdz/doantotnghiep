@@ -13,15 +13,15 @@
     <string name="login">Đăng nhập</string>
     <string name="signup">Đăng ký</string>
     <string name="title_login">Đăng nhập tài khoản</string>
-    <string name="login_username">Điền Username/SĐT</string>
+    <string name="login_username">Điền Email</string>
     <string name="login_pass">Điền mật khẩu</string>
     <string name="forget_pass">Quên mật khẩu?</string>
-    <string name="descriptoion_signup">Ba mẹ chưa có tài khoản?Đăng ký ngay!</string>
+    <string name="description_signup">Ba mẹ chưa có tài khoản?Đăng ký ngay!</string>
     <string name="title_signup">Đăng ký tài khoản</string>
     <string name="description_save_1">Lưu lại quá trình học tập</string>
     <string name="description_save_2">Sử dụng trên nhiều thiết bị</string>
     <string name="or">Hoặc</string>
-    <string name="number_phone">Nhập số điện thoại của bạn...</string>
+    <string name="number_phone_editText">Nhập email của bạn...</string>
     <string name="or_continue">Hoặc tiếp tục với</string>
     <string name="description_login">Ba mẹ đã có tài khoản?Đăng nhập ngay!</string>
     <string name="title_pass">Thiết lập mật khẩu</string>
@@ -39,7 +39,7 @@
     <string name="take_a_shot">Chụp hình</string>
     <string name="load_image">Chọn hình</string>
     <string name="choice_charater">Chọn người học</string>
-    <string name="warning_number_phone" >Kiểm tra lại số điện thoại của bạn</string>
+    <string name="warning_number_phone" >Kiểm tra lại email của bạn</string>
     <!-- Home -->
     <string name="lesson">Bài học</string>
     <string name="test">Kiểm tra</string>

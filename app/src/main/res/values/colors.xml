@@ -21,4 +21,13 @@
     <color name="pink">#ff32b4</color>
     <color name="orange_pink">#FF7F69</color>
     <color name="facebook">#698EE3</color>
+    <color name="lessonColor1">#0E7490</color>
+    <color name="lessonColor2">#2898C6</color>
+    <color name="lessonColor3">#F9A8D4</color>
+    <color name="lessonColor4">#FB923C</color>
+    <color name="lessonColor5">#CD6065</color>
+    <color name="lessonColor6">#FFDA5D</color>
+    <color name="lessonColor7">#C1FF72</color>
+    <color name="lessonColor8">#254C62</color>
+
 </resources>

@@ -11,7 +11,8 @@ import io.strongapp.gymworkout.base.BaseActivity
 import kids.preschool.doantotnghiep.R
 import kids.preschool.doantotnghiep.databinding.ActivityMultiLangBinding
 import kids.preschool.doantotnghiep.ui.account.AccountAct
-import kids.preschool.doantotnghiep.ui.guidekids.CharaterAct
+import kids.preschool.doantotnghiep.ui.guidekids.CharacterAct
+import kids.preschool.doantotnghiep.ui.guidekids.GuideImageAct
 import kids.preschool.doantotnghiep.ui.guidekids.GuideNameAct
 import kids.preschool.doantotnghiep.ui.guidekids.viewmodel.GuideCharacterViewModel
 import kotlinx.coroutines.launch
@@ -31,7 +32,7 @@ class MultiLangAct : BaseActivity<ActivityMultiLangBinding>() {
 					guideCharacterViewModel.userAndCharacter(user.id).observe(this@MultiLangAct,{
 						it.let {
 							if (it.character.size > 0){
-								val intent = Intent(this@MultiLangAct, CharaterAct::class.java)
+								val intent = Intent(this@MultiLangAct, CharacterAct::class.java)
 								startActivity(intent)
 							}else{
 								val intent = Intent(this@MultiLangAct, GuideNameAct::class.java)
@@ -118,7 +119,6 @@ class MultiLangAct : BaseActivity<ActivityMultiLangBinding>() {
 		binding.btnVn.background =
 			if (selectedLang == "vi") resources.getDrawable(R.drawable.bg_border_item_lang)
 			else resources.getDrawable(R.drawable.bg_border_item_lang_unselect)
-		// Kiểm tra xem có giới tính được chọn hay không và cập nhật màu sắc của nút "Next"
 		if (!selectedLang.isNullOrBlank()) {
 			binding.btnSave.visibility = View.VISIBLE
 		} else {

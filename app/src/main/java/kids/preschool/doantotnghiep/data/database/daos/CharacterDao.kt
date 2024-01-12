@@ -24,6 +24,6 @@ interface CharacterDao {
 
 	@Query("Select * From user_table Where id = :idUser")
 	@Transaction
-	fun observerCharacter(idUser : Long) : LiveData<UserAndCharacter>
+	fun observerCharacter(idUser : String) : LiveData<UserAndCharacter>
 
 }

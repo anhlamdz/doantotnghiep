@@ -23,7 +23,7 @@ class SignUpAct : BaseActivity<ActivitySignupBinding>() {
 			startActivity(intent)
 		}
 		binding.btnContinue.setOnClickListener {
-			when(isValidPhoneNumber(binding.numberPhone.text.toString())){
+			when(isValidEmail(binding.numberPhone.text.toString())){
 				true -> {
 					val intent = Intent(this,PassAct::class.java)
 					intent.putExtra("username",binding.numberPhone.text.toString())
@@ -44,9 +44,12 @@ class SignUpAct : BaseActivity<ActivitySignupBinding>() {
 	override fun bindViewModel() {
 
 	}
-	fun isValidPhoneNumber(phoneNumber: String): Boolean {
-		val pattern = Patterns.PHONE
-		return pattern.matcher(phoneNumber).matches()
+	fun isValidEmail(username: String): Boolean {
+		val emailRegex = "^[a-zA-Z0-9._-]+@gmail.com$".toRegex()
+		if (!username.matches(emailRegex)) {
+			return false
+		}
+		return true
 	}
 
 

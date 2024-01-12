@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "757345628248",
+    "project_id": "kids-preschool-aa6b8",
+    "firebase_url": "https://kids-preschool-aa6b8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "storage_bucket": "kids-preschool-aa6b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757345628248:android:db8720c635e7675c5cda2d",
+        "android_client_info": {
+          "package_name": "kids.preschool.doantotnghiep"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9mSSRdmfAsvGDhyAlkjpxFSgXpM8W2hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

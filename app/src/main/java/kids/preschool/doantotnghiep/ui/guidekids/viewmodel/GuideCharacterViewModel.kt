@@ -56,7 +56,7 @@ class GuideCharacterViewModel(application: Application) : AndroidViewModel(appli
 	fun updateCharacter(characterEntity: CharacterEntity) = viewModelScope.launch {
 		characterRepository.update(characterEntity)
 	}
-	fun userAndCharacter(idUser : Long) : LiveData<UserAndCharacter>{
+	fun userAndCharacter(idUser : String) : LiveData<UserAndCharacter>{
 		return characterRepository.userAndCharacter(idUser)
 	}
 	suspend fun getInfo(): UserEntity {

@@ -70,13 +70,50 @@
             android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
-            android:name=".ui.guidekids.CharaterAct"
+            android:name=".ui.guidekids.CharacterAct"
             android:exported="false"
             android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.home.HomeAct"
             android:exported="false"
             android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.lesson.LessonAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.lesson.startlesson.StartLessonAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.lesson.LessonEndAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.account.setting.SettingAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.account.setting.changepass.ChangePassAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.guidekids.EditCharacterAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.test.TestAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.test.starttest.StartTestAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ui.home.test.TestEndAct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>

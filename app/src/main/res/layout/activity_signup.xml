@@ -5,7 +5,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <ImageView
             android:id="@+id/btn_back"
             android:layout_width="40dp"
@@ -86,11 +85,11 @@
                 android:id="@+id/number_phone"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:hint="@string/number_phone"
+                android:hint="@string/number_phone_editText"
                 android:textColor="#252932"
                 android:textColorHint="#8B93A7"
                 android:textSize="28sp"
-                android:inputType="number"
+                android:inputType="textEmailAddress"
                 android:background="@null"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/btn_continue"

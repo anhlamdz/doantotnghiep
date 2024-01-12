@@ -15,7 +15,7 @@ class CharacterRepository (private val characterDao: CharacterDao) {
 	suspend fun delete(characterEntity: CharacterEntity){
 		return characterDao.delete(characterEntity)
 	}
-	fun userAndCharacter(idUser : Long) : LiveData<UserAndCharacter> {
+	fun userAndCharacter(idUser : String) : LiveData<UserAndCharacter> {
 		return characterDao.observerCharacter(idUser)
 	}
 }
