@@ -25,7 +25,7 @@ class LessonAdapter(
 
 				itemView.setOnClickListener {
 					val intent = Intent(context,StartLessonAct::class.java)
-					intent.putExtra("lesson",lesson.name)
+					intent.putExtra("lesson",context.getString(lesson.name))
 					context.startActivity(intent)
 				}
 			}

@@ -11,9 +11,9 @@ import kids.preschool.doantotnghiep.ui.home.lesson.LessonEndAct
 import kids.preschool.doantotnghiep.ui.home.lesson.adapter.TabAdapter
 
 class StartLessonAct : BaseActivity<ActivityStartLessonBinding>() {
-	private var name : String =""
+	private lateinit var name : String
 	override fun initView() {
-		name = intent.getStringExtra("lesson") as String
+		name = intent.getStringExtra("lesson")?: ""
 		val lesson = TabAdapter(getList(name),this)
 		binding.viewpager2.adapter = lesson
 	}
